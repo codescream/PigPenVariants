@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/site.css">
+  <title>PigPen Variants</title>
+</head>
+<body>
+  <img src="images/blinkingeye2.gif" alt="boom" id="eye">
+  <select name="encrpyt" id="encrypt" onchange="ChooseVar(this.value)">
+      <option value="0">Select Encryption Variant:</option>
+      <option value="1">PigPen Code</option>
+      <option value="2">Masonic Cipher</option>
+      <option value="3">Cipher Code</option>
+  </select>
+  <select name="task" id="task" onchange="Task(this.value)">
+      <option value="0">What do you want to do?</option>
+      <option value="1">Encode</option>
+      <option value="2">Decode</option>
+  </select>
+  <img src="images/hand.png" id="hand" alt="boom" srcset="">
+  <h1 id="label">SPY CENTRE</h1>
+  <textarea name="message" id="message"  placeholder="Enter message..."></textarea>
+  <button type="submit" id="encode" onclick="CodeDecode(this.id)">Code Message</button>
+  <button type="submit" id="decode" onclick="CodeDecode(this.id)">Decode Message</button>
+  <button type="submit" id="goback" onclick="GoBack()">&lt;&nbsp;&nbsp;Go Back</button>
+  <button type="submit" id="trash" onclick="Trash()" disabled>Trash Message</button>
+  <img src="images/dustbin2.png" alt="" id="trashcan">
+  <script src="js/site.js"></script>
+</body>
+</html>

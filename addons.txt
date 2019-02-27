@@ -1,0 +1,6 @@
+- flashing hand pointer when no message is entered.
+- col in code font: 117;font-family: PigPenCodeFont;button-top: 423px;
+- 
+
+------------
+-use the top of the textarea to determine the position of the other elements!!!
